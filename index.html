@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fjalla+One|Noto+Sans:400,700|Open+Sans:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Noto+Sans:400,700" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+<script type='text/javascript' src='shift.js'></script>
+<script type='text/javascript' src='modalclass.js'></script>
+<script type='text/javascript' src='hashmap.js'></script>
+<script type='text/javascript' src='hashmaprecipe.js'></script>
+<script type='text/javascript' src='hashmapcooktime_img.js'></script>
+<!-- Fonts -->
+
+<title>You are in India when</title>
+</head>
+<body id="the-body">
+
+
+
+		<nav id="navigation__menu" style="margin-right: 0px;">
+        <ul>
+          <li class="current-menu-item" ><a href="#firstpage"><span style="color:rgba(255,70,10,1);">Main</span></a></li>
+          <li class=""><a href=""><span>Contact Us</span></a></li>
+        	<li class=""><a href=""><span>Settings</span></a></li>
+        </ul>
+    </nav>
+
+	<header>
+	</header>
+
+	<main>
+		<div>
+			<div id="myBtn"><img src="hamburger.png" height="40" width="40"></div>
+			<div id="myModal" class="modal">
+  			<!-- Modal content -->
+			  <div class="modal-content">
+			    <span class="close">&times;</span>
+					<br/>
+			    <ul>
+						<li>Main</li>
+						<li>Contact Us</li>
+						<li>Settings</li>
+					</ul>
+			  </div>
+		</div>
+		<script>
+			var modal = document.getElementById('myModal');
+			var btn = document.getElementById("myBtn");
+			var span = document.getElementsByClassName("close")[0];
+			btn.onclick = function() {
+			    modal.style.display = "block";
+			}
+			span.onclick = function() {
+			    modal.style.display = "none";
+			}
+			window.onclick = function(event) {
+			    if (event.target == modal) {
+			        modal.style.display = "none";
+			    }
+			}
+		</script>
+			<!--First page-->
+			<div class="backgroundimage">
+			<div class="firstpage" id="firstpage">
+					<p>YOU KNOW YOU ARE IN <br/><span class="India">INDIA</span> WHEN</p>
+					<div class="arrowContainer">
+					<a href="#foodpage"><img id="downarrow" src="Downarrow.png"></a>
+					</div>
+			</div>
+		</div>
+			<!--Second page-->
+			<div class="foodpage" id="foodpage">	<p>FOOD TURNS YOU ON!</p></div>
+					<div id="clickmodal" class="clickmodal">
+						<span class="close2" onclick="closeit()">&times;</span>
+						<p class="recipetime">RECIPE TIME!!</p>
+						<div id="managingdivs">
+							<div id="actualpics"></div>
+							<div id="managingdivcol">
+								<div id="clickmodalcontent"></div>
+								<div id="cooktime"></div>
+							</div>
+						</div>
+							<div class="thirdpage" id="thirdpage">
+								<div id="recipediv" class="recipediv">
+										<div class="recipebutton"id="recipebutton" >
+												<div class="buttony" id="side1" onclick="hashmapel(side1,1)"><h3>VADAPAO</h3></div>
+												<div class="buttony" id="side2" onclick="hashmapel(side2,2)"><h3>PAPDI CHAT</h3></div>
+												<div class="buttony" id="side3" onclick="hashmapel(side3,3)"><h3>GOLGAPPAS</h3></div>
+												<div class="buttony" id="side4" onclick="hashmapel(side4,4)"><h3>PARANTHAS</h3></div>
+												<div class="buttony" id="side5" onclick="hashmapel(side5,5)"><h3>BHELPURI</h3></div>
+												<div class="buttony" id="side6" onclick="hashmapel(side6,6)"><h3>CHOLE KULCHE</h3></div>
+												<div class="buttony" id="side7" onclick="hashmapel(side7,7)"><h3>PAV BHAJI</h3></div>
+												<div class="buttony" id="side8" onclick="hashmapel(side8,8)"><h3>BUTTER CHICKEN</h3></div>
+										</div>
+										<div class="changemyrecipe" id="changemyrecipe">
+											<!--access hashmaprecipe.js-->
+										</div>
+										<div class="justdrawingdiv" id="justdrawingdiv">
+											<!--access hashmaprecipe.js-->
+										</div>
+							</div>
+							</div>
+					</div>
+				</div>
+
+				<div class="secondpage" id="secondpage"><!--flipper container-->
+				<!-- FOOOD-->
+					<section><!--flipper-->
+						<div class="flipper">
+							<div class="dominoDiv"  onclick="clicky(1)"><p>VADAPAO STALLS ARE UBIQUITOUS</p><img src="Illustrations8.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(2)"><p>PAPDI CHAT SUMMONS YOUR INNER HUNGER MONSTER</p><img src="Illustrations4.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(3)"><p>YOU GET MOUTHWATERING GOLGAPPAS!</p><img src="Illustrations1.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(4)"><p>BUTTER IS OVERFLOWING OUT OF YOUR PARANTHAS</p><img src="Illustrations3.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(5)"><p>"BHAIYA ONE BHELPURI" IS YOUR STAPLE</p><img src="Illustrations7.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(6)"><p>CHOLE KULCHE MAKE YOUR NOSE RUN</p><img src="Illustrations6.png" width="210" height="210"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(7)"><p>PAV BHAJI STARTS TO HAUNT YOUR DAY DREAMS</p><img src="Illustrations5.png" width="200" height="200"></div>
+						</div>
+					</section>
+					<section>
+						<div class="flipper">
+							<div class="dominoDiv" onclick="clicky(8)"><p>BUTTER CHICKEN CRAVINGS ARE AT MAX</p><img src="Illustrations2.png" width="200" height="200"></div>
+						</div>
+					</section>
+				</div>
+
+
+		</div>
+	</main>
+
+	<footer>
+		<div><p>	&#169; Copyright 2018 HTML</p></div>
+	</footer>
+
+</body>
+</html>
